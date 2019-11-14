@@ -6,7 +6,13 @@
 
 ***
 
-* [Primeira aula](#primeira-aula---1504)
+* [Primeira aula](#primeira-aula)
+  * [Introdução](#introducao)
+    - [Princípios básicos](#principios-basicos)
+    - [O que é lógica](#o-que-e-logica)
+    - [Exercício de lógica](#exercicio-de-logica)
+    - [O que são algoritmos](#o-que-sao-algoritmos)
+    - [Exercício de algoritmos](#exercicio-de-algoritmos)
   * [Variáveis](#variáveis)
   * [Comentários](#comentários)
   * [Operadores aritméticos](#operadores-aritméticos)
