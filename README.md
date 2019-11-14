@@ -23,22 +23,10 @@
   * [Palavras reservadas](#palavras-reservadas)
   * [Case sensitive](#case-sensitive)
   * [Nomenclatura](#nomenclatura)
-  * [Chamando o JS dentro do HTML](#chamando-o-js-dentro-do-html)
-  * [Manipulação do DOM](#manipulação-do-dom)
-    - [DOM](#dom)
-    - [getElementById()](#getelementbyid)
-    - [querySelector()](#queryselector)
-    - [addEventListener()](#addeventlistener)
-      - [DOMContentLoaded](#domcontentloaded)
-      - [click](#click)
-      - [mouseover](#mouseover)
-      - [change](#change)
-    - [innerHTML](#innerHTML)
-  * [console.log() e alert()](#consolelog-e-alert)
+  * [console.log(), alert(), confirm e prompt](#consolelog-alert-confirm-e-prompt)
   * [Concatenação de variáveis](#concatenação-de-variáveis)
   * [if/else if/else](#ifelse-ifelse)
-  * [Exercícios](exercícios)
-
+  * [Tarefa de casa](tarefa-de-casa)
 
 
 ### Primeira aula
@@ -275,151 +263,8 @@ Não utilizar hífen, nem espaços e nem caracteres especiais para separar nomes
 
 ***
 
-### Chamando o JS dentro do HTML
 
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-  </head>
-  <body>
-    <h1>Título</h1>
-    <p>Parágrafo</p>
-  </body>
-</html>
-```
-
-***
-
-### Manipulação do DOM
-
-#### DOM
-
-DOM = Document Object Model
-
-O DOM é uma interface que representa como os documentos HTML e XML são lidos pelo seu browser. Após o browser ler seu documento HTML, ele cria um objeto que faz uma representação estruturada do seu documento e define meios de como essa estrutura pode ser acessada. Nós podemos acessar e manipular o DOM com JavaScript.
-
-![variavel](images/dom.png)
-
-
-#### getElementById()
-
-Esse método retorna o elemento que estiver contendo o nome do ID passado. Como os IDs devem ser únicos, é um método muito útil para pegar apenas o elemento desejado.
-
-```html
-<div>
-  <input type="text" id="textInput" class="text-input"  />
-</div>
-```
-
-```js
-let getInputId = document.getElementById('textInput');
-```
-
-#### querySelector()
-
-Esse método retorna qualquer elemento do DOM, como classes, tags e ID's. Você precisa deixar explicito se está chamando uma classe, um ID ou uma tag.
-
-```html
-<div>
-  <input type="text" id="textInput" class="text-input" />
-</div>
-```
-
-```js
-let getInputId = document.querySelector('#textInput');
-let getInputClass = document.querySelector('.text-input');
-let getInputTag = document.querySelector('input');
-```
-
-```
-Importante:
-Vamos utilizar sempre os seletores de ID. No HTML as classes vão ser utilizadas para estilizar o CSS, e o ID vai ser utilizado para manipular o DOM pelo Javascript.
-```
-
-#### addEventListener()
-Os elementos DOM além de possuirem métodos também possuem eventos. São eles que fazem a interatividades dos elementos no documento.
-
-
-##### DOMContentLoaded
-
-O código HTML é lido de cima para baixo. No header do HTML nós chamamos nosso arquivo de .js, e ele é lido e executado imediatamente, antes mesmo do HTML ser carregado.
-Para evitar isso, nós vamos sempre colocar nossos códigos js dentro da função abaixo:
-
-```js
-window.addEventListener('DOMContentLoaded', function() {
-  // aqui vai todo o código a ser executado na página
-});
-```
-
-Ela vai fazer com que o browser leia nosso arquivo .js mas espero o DOM terminar de carregar para executar os códigos que estão dentro do nosso arquivo.
-
-
-##### click
-
-```html
-<div>
-  <button id="button" />
-</div>
-```
-
-```js
-let getButtonId = document.querySelector('#button');
-
-getButtonId.addEventListener('click', function() {
-    // quando o botão for clicado esse código será executado
-  });
-```
-
-##### mouseover
-
-```html
-<div>
-  <button id="button" />
-</div>
-```
-
-```js
-let getButtonId = document.querySelector('#button');
-
-getButtonId.addEventListener('mouseover', function() {
-    // quando o mouse passar por cima do botão esse código será executado
-  });
-```
-
-##### change
-
-```html
-<select id="select">
-  <option value="option1">Opção 1</option>
-  <option value="option2">Opção 2</option>
-</select>
-```
-
-```js
-let getSelectId = document.querySelector('#select');
-
-getSelectId.addEventListener('change', function() {
-    // quando o element for modificado esse código será executado
-  });
-```
-
-#### innerHTML
-
-```html
-  <div id="displayText"></div>
-```
-
-```js
-let displayText = document.querySelector('#displayText');
-displayText.innerHTML = "Texto que eu inseri no HTML."
-
-```
-
-
-#### console.log() e alert()
+#### console.log(), alert(), confirm e prompt
 
 ```js
 let getInputId = document.getElementById('textInput');

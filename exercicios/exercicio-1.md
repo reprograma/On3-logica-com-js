@@ -1,1 +1,3 @@
-* Pense em algo que você goste de fazer (ir ao cinema, praticas esportes, ler, cozinhar...). Crie um algoritmo descrevendo essa atividade.s
+### Exercício de lógica
+
+* https://rachacuca.com.br/logica/problemas/amigas-na-piscina/
