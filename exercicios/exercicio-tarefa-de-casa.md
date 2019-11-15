@@ -1,5 +1,7 @@
 ### Transformar esse algoritmo que vocês escreveram em código javaScript:
 
+* Desenhe o fluxograma do algoritmo abaixo
+
 * Crie um algoritmo para o cálculo de média final de um aluno, para ele saber se passou de ano ou não.
   - A média para passar de ano na escola é 7
   - O ano escolar tem 3 trimestres

@@ -7,12 +7,11 @@
 ***
 
 * [Primeira aula](#primeira-aula)
-  * [Introdução](#introducao)
-    - [Princípios básicos](#principios-basicos)
-    - [O que é lógica](#o-que-e-logica)
-    - [Exercício de lógica](#exercicio-de-logica)
-    - [O que são algoritmos](#o-que-sao-algoritmos)
-    - [Exercício de algoritmos](#exercicio-de-algoritmos)
+  * [O que é lógica](#o-que-e-logica)
+  * [Exercício de lógica](#exercicio-de-logica)
+  * [O que são algoritmos](#o-que-sao-algoritmos)
+  * [O que é lógica de programação](#o-que-e-logica-de-programacao)
+  * [Exercício de algoritmos](#exercicios-de-algoritmos)
   * [Variáveis](#variáveis)
   * [Comentários](#comentários)
   * [Operadores aritméticos](#operadores-aritméticos)
@@ -30,6 +29,75 @@
 
 
 ### Primeira aula
+
+#### O que é lógica
+
+Lógica tem dois significados principais: discute o uso de raciocínio em alguma atividade e é o estudo do raciocínio válido. No segundo sentido, a lógica é discutida principalmente nas disciplinas de filosofia, matemática e ciência da computação.
+(Fonte: [Wikipedia](https://pt.wikipedia.org/wiki/Lógica))
+
+Paradoxo (declaração aparentemente verdadeira que leva a uma contradição lógica) de lógica:
+
+```
+A afirmação abaixo é verdadeira.
+A afirmação acima é falsa.
+```
+
+Exemplos de lógica no dia a dia?
+
+#### Exercício de lógica
+
+https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-1.md
+
+
+#### O que é lógica de programação
+O que podemos notar no exercício que fizemos acima?
+Podemos dizer que seguimos uma sequência ordenada de passos até conseguir no resultado final? (Lemos cada frase, preenchemos valores em cada campo, eliminamos valores já preenchidos).
+
+Lógica de programação é o método usado para escrever programas que um computador entenda.
+
+A lógica de programação parte do princípio de que praticamente todas as tarefas humanas são uma sequência ordenada de passos, que acontecem durante um tempo finito e que produzem um resultado esperado.
+
+Na ciência da computação, a álgebra booleana é a base do projeto de hardware, e é um conceito muito utilizado na programação.
+
+```
+0 e 1
+não e sim
+falso e verdadeiro
+```
+
+
+#### O que são algoritmos
+Ao falar de lógica de programação nós já descrevemos o que é um algoritmo.
+
+Algoritmo é um conceito muito antigo, que é utilizado desde antes de Cristo. Para os antigos, o algoritmos são procedimentos precisos, não ambíguos, mecânicos, eficientes e corretos.
+
+Algumas definições de um algoritmo na programação são:
+
+```
+Sequência ordenada de passos, que acontecem durante um tempo finito e que produzem um resultado esperado.
+
+Conjunto das regras e procedimentos lógicos perfeitamente definidos que levam à solução de um problema em um número finito de etapas.
+
+Uma receita que mostra passo a passo os procedimentos necessários para a resolução de uma tarefa.
+```
+
+
+#### Como criar algoritmos
+
+Os algoritmos surgem com a necessidade de resolver algum problema ou executar uma tarefa.
+Para ajudar, podemos utilizar um fluxograma, que vai dar apoio visual para resolvermos a tarefa.
+
+Fluxograma para resolver um problema de lâmpada que não acende
+![lampada](images/flow-1.png)
+
+Fluxograma para assar um pão
+![lampada](images/flow-2.png)
+
+
+#### Exercícios de algoritmos
+
+https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-2.md
+
 
 #### Variáveis
 No computador, uma variável é um espaço de memória que vai ser preenchido por algum valor variável. Na maioria dos casos, o valor variável vai ser definido pelo usuário.
@@ -320,10 +388,5 @@ if (condição) {
 ```
 
 O else if pode ser repetido quantas vezes for necessário.
-
-
-#### Exercícios
-
-https://github.com/reprograma/T7-javascript-I/blob/master/Exercicios-primeira-aula/exercicios.md
 
 ***
