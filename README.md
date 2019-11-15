@@ -1,17 +1,20 @@
-# Javascript I
+# Lógica + Javascript
 
-### O objetivo desse módulo é apresentar às alunas conceitos básicos de javascript, tais como variáveis, condicionais, loops, objetos, funções e manipulação do DOM.
+### O objetivo desse módulo é apresentar às alunas conceitos básicos de lógica, lógica de programação, algoritmos e introdução ao javascript, com conceitos como variáveis, operadores e condicionais.
 
 ![javascript](images/javascript.gif)
 
 ***
 
-* [Primeira aula](#primeira-aula)
-  * [O que é lógica](#o-que-e-logica)
-  * [Exercício de lógica](#exercicio-de-logica)
-  * [O que são algoritmos](#o-que-sao-algoritmos)
-  * [O que é lógica de programação](#o-que-e-logica-de-programacao)
-  * [Exercício de algoritmos](#exercicios-de-algoritmos)
+* [Lógica e algoritmos](#lógica-e-algoritmos)
+  * [O que é lógica](#o-que-é-logica)
+  * [Exercício de lógica](#exercicio-de-lógica)
+  * [O que são algoritmos](#o-que-são-algoritmos)
+  * [O que é lógica de programação](#o-que-é-lógica-de-programação)
+  * [Exercícios de algoritmos](#exercícios-de-algoritmos)
+* [Javascript](#javascript)
+  * [Linguagem de programação](#linguagem-de-programacao)
+  * [O que é Javascript](#o-que-é-javascript)
   * [Variáveis](#variáveis)
   * [Comentários](#comentários)
   * [Operadores aritméticos](#operadores-aritméticos)
@@ -19,30 +22,31 @@
   * [Operadores de comparação](#operadores-de-comparação)
   * [Operadores lógicos](#operadores-lógicos)
   * [Data types](#data-types)
+  * [Funções nativas](#funcões-nativas)
   * [Palavras reservadas](#palavras-reservadas)
   * [Case sensitive](#case-sensitive)
   * [Nomenclatura](#nomenclatura)
-  * [console.log(), alert(), confirm e prompt](#consolelog-alert-confirm-e-prompt)
   * [Concatenação de variáveis](#concatenação-de-variáveis)
+  * [console.log(), alert(), confirm e prompt](#consolelog-alert-confirm-e-prompt)
   * [if/else if/else](#ifelse-ifelse)
   * [Tarefa de casa](tarefa-de-casa)
 
 
-### Primeira aula
+### Lógica e algoritmos
 
 #### O que é lógica
 
 Lógica tem dois significados principais: discute o uso de raciocínio em alguma atividade e é o estudo do raciocínio válido. No segundo sentido, a lógica é discutida principalmente nas disciplinas de filosofia, matemática e ciência da computação.
 (Fonte: [Wikipedia](https://pt.wikipedia.org/wiki/Lógica))
 
-Paradoxo (declaração aparentemente verdadeira que leva a uma contradição lógica) de lógica:
+Abaixo temos um paradoxo (declaração aparentemente verdadeira que leva a uma contradição lógica) de lógica:
 
 ```
 A afirmação abaixo é verdadeira.
 A afirmação acima é falsa.
 ```
 
-Exemplos de lógica no dia a dia?
+- Exemplos de lógica no dia a dia?
 
 #### Exercício de lógica
 
@@ -91,12 +95,20 @@ Fluxograma para resolver um problema de lâmpada que não acende
 ![lampada](images/flow-1.png)
 
 Fluxograma para assar um pão
-![lampada](images/flow-2.png)
+![pao](images/flow-2.png)
 
 
 #### Exercícios de algoritmos
 
 https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-2.md
+
+
+### Javascript
+
+#### Linguagem de programação
+
+
+#### O que é Javascript
 
 
 #### Variáveis
@@ -271,7 +283,7 @@ typeof 0  //retorna number
 typeof 'Patricia'  //retorna string
 ```
 
-#### isNaN()
+#### Funções nativas
 
 `isNaN()` é uma função nativa do Javascript que serve para descobrir se uma variável NÃO é um número. Função nativa é uma função que já está pronta para ser usada quando quisermos, ela já vem junto com a linguagem.
 
@@ -282,6 +294,8 @@ isNaN(1) //retorna false, porque é um número
 ```js
 isNaN('patricia') //retorna true, porque não é um número
 ```
+
+`Date()`
 
 
 #### Palavras reservadas
