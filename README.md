@@ -31,7 +31,8 @@
   * [Concatenação de variáveis](#concatenação-de-variáveis)
   * [console.log(), alert(), confirm e prompt](#consolelog-alert-confirm-e-prompt)
   * [if/else if/else](#ifelse-ifelse)
-  * [Tarefa de casa](tarefa-de-casa)
+  * [Exercícios](#exercicios)
+  * [Tarefa de casa](https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-tarefa-de-casa.md)
 
 
 ## Lógica e algoritmos
@@ -435,4 +436,8 @@ if (condição) {
 
 O else if pode ser repetido quantas vezes for necessário.
 
-***
+
+
+#### Exercícios
+
+https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-3.md
