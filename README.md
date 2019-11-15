@@ -7,23 +7,25 @@
 ***
 
 * [Lógica e algoritmos](#lógica-e-algoritmos)
-  * [O que é lógica](#o-que-é-logica)
-  * [Exercício de lógica](#exercicio-de-lógica)
-  * [O que são algoritmos](#o-que-são-algoritmos)
+  * [O que é lógica](#o-que-é-lógica)
+  * [Exercício de lógica](#exercício-de-lógica)
   * [O que é lógica de programação](#o-que-é-lógica-de-programação)
+  * [O que são algoritmos](#o-que-são-algoritmos)
+  * [Como criar algoritmos](#como-criar-algoritmos)
   * [Exercícios de algoritmos](#exercícios-de-algoritmos)
 * [Javascript](#javascript)
-  * [Linguagem de programação](#linguagem-de-programacao)
+  * [Linguagem de programação](#linguagem-de-programação)
   * [O que é Javascript](#o-que-é-javascript)
   * [Variáveis](#variáveis)
+  * [Palavras reservadas](#palavras-reservadas)
   * [Comentários](#comentários)
   * [Operadores aritméticos](#operadores-aritméticos)
   * [Operadores de atribuição](#operadores-de-atribuição)
   * [Operadores de comparação](#operadores-de-comparação)
   * [Operadores lógicos](#operadores-lógicos)
   * [Data types](#data-types)
-  * [Funções nativas](#funcões-nativas)
-  * [Palavras reservadas](#palavras-reservadas)
+  * [typeof](#typeof)
+  * [Funções nativas](#funções-nativas)
   * [Case sensitive](#case-sensitive)
   * [Nomenclatura](#nomenclatura)
   * [Concatenação de variáveis](#concatenação-de-variáveis)
@@ -32,7 +34,7 @@
   * [Tarefa de casa](tarefa-de-casa)
 
 
-### Lógica e algoritmos
+## Lógica e algoritmos
 
 #### O que é lógica
 
@@ -91,10 +93,10 @@ Uma receita que mostra passo a passo os procedimentos necessários para a resolu
 Os algoritmos surgem com a necessidade de resolver algum problema ou executar uma tarefa.
 Para ajudar, podemos utilizar um fluxograma, que vai dar apoio visual para resolvermos a tarefa.
 
-Fluxograma para resolver um problema de lâmpada que não acende
+### Fluxograma para resolver um problema de lâmpada que não acende
 ![lampada](images/flow-1.png)
 
-Fluxograma para assar um pão
+### Fluxograma para assar um pão
 ![pao](images/flow-2.png)
 
 
@@ -103,7 +105,7 @@ Fluxograma para assar um pão
 https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-2.md
 
 
-### Javascript
+## Javascript
 
 #### Linguagem de programação
 
@@ -149,6 +151,15 @@ meuNome = 'Maria';
 ```
 
 Referência: https://www.w3schools.com/js/js_es6.asp
+
+
+#### Palavras reservadas
+
+Existem algumas palavras que não podemos utilizar para declarar variáveis, pois elas fazem parte da linguagem javascript.
+
+```js
+let let = 'nome da variável';
+```
 
 
 #### Comentários
@@ -298,15 +309,6 @@ isNaN('patricia') //retorna true, porque não é um número
 `Date()`
 
 
-#### Palavras reservadas
-
-Existem algumas palavras que não podemos utilizar para declarar variáveis, pois elas fazem parte da linguagem javascript.
-
-```js
-let let = 'nome da variável';
-```
-
-
 #### Case sensitive
 Palavras que começam com letra maiúscula e minúscula são consideradas diferentes pelo JavaScript.
 
@@ -346,18 +348,6 @@ Não utilizar hífen, nem espaços e nem caracteres especiais para separar nomes
 ***
 
 
-#### console.log(), alert(), confirm e prompt
-
-```js
-let getInputId = document.getElementById('textInput');
-console.log(getInputId)
-```
-
-```js
-let getInputId = document.getElementById('textInput');
-alert(getInputId)
-```
-
 #### Concatenação de variáveis
 
 ```js
@@ -371,9 +361,23 @@ console.log("Meu nome é " + name);
 ```
 
 
-#### if/else if/else
+#### console.log(), alert(), confirm e prompt
 
-If/else if/else são condicionais que utilizamos para executar ou não um pedaço de código.
+```js
+let getInputId = document.getElementById('textInput');
+console.log(getInputId)
+```
+
+```js
+let getInputId = document.getElementById('textInput');
+alert(getInputId)
+```
+
+
+#### if/else if/else (condicionais)
+
+if/else if/else são condicionais que utilizamos para executar ou não um pedaço de código.
+
 Na vida real seria como tomar a decisão de atravessar ou não a rua. SE o sinal estiver VERDE, você atravessa. SENÃO (vermelho), você espera.
 
 
