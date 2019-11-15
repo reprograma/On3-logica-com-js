@@ -1,4 +1,4 @@
-### Transformar esse algoritmo que vocês escreveram em código javaScript:
+### Transformar o algoritmo que vocês escreveram em código javascript:
 
 * Crie um algoritmo para o cálculo de média final de um aluno, para ele saber se passou de ano ou não
   - A média para passar de ano na escola é 7

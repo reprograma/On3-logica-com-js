@@ -104,13 +104,11 @@ Para ajudar, podemos utilizar um fluxograma, que vai dar apoio visual para resol
 Após a criação do fluxograma podemos começar a escrever o algoritmo
 
 ```
-#### Algoritmo para assar um pão
-- Abrir forno
+// Algoritmo para assar um pão
+- Abrir o forno
 - Verificar se o forno está ligado
-- Colocar o pão no forno
-- Esperar 50 minutos
-- Retirar o pão do forno
-- Desligar o forno
+- Colocar lenha ou acender o fogo
+- Assar o pão
 ```
 
 #### Exercícios de algoritmos
@@ -153,30 +151,24 @@ Exemplo: Você faz o cadastro em um site, preenchendo um formulário com seu {no
 
 ![variavel](images/var-2.png)
 
+- Quais seriam as variáveis do algoritmo que vocês escreveram no exercício de cálculo da média?
+
 ***
 
 Para declarar uma variável, podemos utilizar a palavra reservada `var`, seguida do nome da variável e o valor que estamos atribuindo a ela.
 
 ```js
 var meuNome = 'Patricia';
+var fruta = 'Pera';
 ```
 
-Nas nossas aulas vamos utilizar duas palavras reservadas para declarar variáveis: `let` e `const`.
+Nas nossas aulas vamos utilizar a palavras reservada `let` para declarar variáveis.
 
 `let` é a versão mais moderna de `var`. A sintaxe é mesma.
 
 ```js
+let meuNome = 'Patricia';
 let fruta = 'Pera';
-fruta = 'Abacaxi';
-```
-
-`const` é um novo jeito de declarar uma variável. A diferença é que ela é uma variável cujo valor, após ser declarado, não pode ser alterado.
-
-```js
-const meuNome = 'Patricia';
-meuNome = 'Maria';
-
-//A atribuição acima não é possível, e vai retornar um erro.
 ```
 
 Referência: https://www.w3schools.com/js/js_es6.asp
@@ -188,7 +180,10 @@ Existem algumas palavras que não podemos utilizar para declarar variáveis, poi
 
 ```js
 let let = 'nome da variável';
+// retorna um erro, pois estamos tentando declarar uma variável com um nome reservado
 ```
+
+Lista de palavras reservadas em Javascript: https://www.w3schools.com/js/js_reserved.asp
 
 
 #### Comentários
@@ -210,7 +205,9 @@ Em JavaScript você pode fazer comentários de duas formas:
  linhas */
 ```
 
-#### Operadores aritméticos
+#### Calculando com javascript - Operadores aritméticos
+
+Podemos fazer cálculos matemáticos com javascript, e para isso utilizamos operadores aritméticos - os mesmos que estudamos na escola (soma, subtração, multiplicação, divisão)
 
 - Soma `+`
 - Subtração `-`
@@ -222,16 +219,20 @@ Em JavaScript você pode fazer comentários de duas formas:
 - Decremento `--`
 
 
-#### Operadores de atribuição
+#### Atribuindo valores com javascript - Operadores de atribuição
 
-- Igual `=`
-- Adiciona valor `+=`
-- Subtrai valor `-=`
-- Multiplica valor `*=`
-- Divide valor `/=`
+Para atribuir valores à variáveis utilizamos operadores de atribuição.
+
+- Igual `=` `x = y`
+- Adiciona valor `+=` `x = x + y`
+- Subtrai valor `-=` `x = x - y`
+- Multiplica valor `*=` `x = x * y`
+- Divide valor `/=` `x = x / y`
 
 
-#### Operadores de comparação
+#### Comparando valores com javascript - Operadores de comparação
+
+Para comparar valores à variáveis utilizamos operadores de comparação.
 
 - Igual a `==` `===` (mesmo valor e mesmo tipo)
 - Não é igual a `!=` `!==` (mesmo valor e mesmo tipo)
@@ -245,54 +246,69 @@ Em JavaScript você pode fazer comentários de duas formas:
 (condição) ? resultado verdadeiro : resultado falso
 
 let idade = 26;
-let bebida = (age >= 21) ? "Cerveja" : "Suco";
+let bebida = (idade >= 21) ? "Cerveja" : "Suco";
 console.log(bebida); // Cerveja
 ```
 
-#### Operadores lógicos
+#### Verificando lógica com javascript - Operadores lógicos
 - E `&&`
 - Ou `||`
 - Não/negação `!`
--
 
-#### Data types
+
+Referência: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+
+#### Data types (Tipos de dados)
 
 Tipos de dados (data types) são conceitos muito importantes em qualquer linguagem de programação.
 Para conseguirmos trabalhar com variáveis, precisamos saber com que tipo de dado estamos lidando.
 
-Existem alguns tipos de variáveis em Javascript:
+Existem alguns tipos de variáveis em javascript:
 
 * String
+É uma variável que representa texto, e seu valor é apresentado usando aspas.
+
 ```js
 let nome = 'Patricia';
 ```
 
 * Number
+É uma variável que representa um número, e seu valor é apresentado usando sem aspas.
+
 ```js
 let number = 10;
 ```
 
 * Boolean
+É uma variável lógica que representa dois valores: verdadeiro ou falso. Seu valor é apresentado usando sem aspas.
+
 ```js
 let option = false;
 ```
 
 * Function
+É uma variável que contém um grupo de código dentro dela.
+
 ```js
-let varFunction = function() {
-  //código da função
+let varFunction = function(a, b) {
+  return a * b;
 }
 ```
 
 * Array
+Um array é utilizado para guardar diversos valores dentro de uma variável.
+
 ```js
 let sanduiches = ['Presunto e queijo', 'Mortadela', 'Rosbife'];
 ```
 
 * Object
+Um objeto também guarda diversos valores dentro dele, mas com a diferença que cada valor pode ter uma propriedade.
+
 ```js
 let sanduiche = {
-    nome: "Mortadela",
+    nome: "Presunto",
     preco: "5",
     disponibilidade: true
 };
@@ -313,7 +329,6 @@ let nome = "";
 let nome = null;
 ```
 
-
 #### typeof
 
 `typeof` serve para descobrirmos o tipo de variável que estamos declarando ou recebendo. Importante lembrar que `typeof` retorna o tipo e não o valor da variável.
@@ -321,11 +336,15 @@ let nome = null;
 ```js
 typeof 0  //retorna number
 typeof 'Patricia'  //retorna string
+typeof false  //retorna boolean
 ```
 
 #### Funções nativas
 
-`isNaN()` é uma função nativa do Javascript que serve para descobrir se uma variável NÃO é um número. Função nativa é uma função que já está pronta para ser usada quando quisermos, ela já vem junto com a linguagem.
+Função nativa é uma função que já está pronta para ser usada quando quisermos, ela já vem junto com a linguagem.
+
+
+`isNaN()` é uma função nativa do Javascript que serve para descobrir se uma variável NÃO é um número.
 
 ```js
 isNaN(1) //retorna false, porque é um número
@@ -335,11 +354,14 @@ isNaN(1) //retorna false, porque é um número
 isNaN('patricia') //retorna true, porque não é um número
 ```
 
-`Date()`
+`Date()` é uma função nativa que retorna a data e horário atuais.
+```js
+Fri Nov 15 2019 16:41:38 GMT-0300 (Brasilia Standard Time)
+```
 
 
 #### Case sensitive
-Palavras que começam com letra maiúscula e minúscula são consideradas diferentes pelo JavaScript.
+Variáveis que começam com letra maiúscula e minúscula são consideradas diferentes pelo javaScript.
 
 ```js
 let primeiroNome = 'Patricia';
@@ -379,35 +401,76 @@ Não utilizar hífen, nem espaços e nem caracteres especiais para separar nomes
 
 #### Concatenação de variáveis
 
+Concatenar é unir o conteúdo de duas ou mais variáveis
+
 ```js
-let name = 'Patricia';
-console.log(`Meu nome é ${name}`);
+let casa = 'casa';
+let mento = 'mento';
+console.log(`${casa}${mento}`);
+// Retorna "Casamento"
 ```
 
 ```js
 let name = 'Patricia';
-console.log("Meu nome é " + name);
+console.log(`Meu nome é ${name}`);
+// Retorna "Meu nome é Patricia"
 ```
+
+
+#### Ferramentas para testar o código
+
+Os navegadores oferecem ferramentas embutidas para testarmos nosso código.
+
+![console](images/console.png)
 
 
 #### console.log(), alert(), confirm e prompt
 
-```js
-let getInputId = document.getElementById('textInput');
-console.log(getInputId)
-```
+O `console.log()` é uma funcão que utilizamos para testar nosso código. O resultado será impresso no console do navegador.
 
 ```js
-let getInputId = document.getElementById('textInput');
-alert(getInputId)
+let mensagem = 'Mensagem que vai aparecer no nosso alerta';
+console.log(mensagem);
 ```
+
+O `alert()` tem a mesma função do console.log, porém ele mostra uma mensagem na tela do usuário.
+
+```js
+let mensagem = 'Mensagem que vai aparecer no nosso alerta';
+alert(mensagem);
+```
+
+O `confirm` é um alerta que nos oferece uma lógica, com dois botões (`Ok` (true) e `Cancel` (false))
+
+```js
+let mensagem = 'Aperte o botão ok';
+confirm(mensagem);
+// Se o usuário apertar Ok vai retornar true, se apertar Cancel vai retornar false
+```
+
+O `prompt` é um alerta que nos oferece, além da lógica de botões, um input para coletarmos variáveis.
+
+```js
+let nome = 'Digite o seu nome';
+prompt(nome);
+```
+
+Na próxima aula nós vamos aprender a manipular o HTML com o JS, mas por enquanto vamos utilizar o `confirm` e o `prompt` para conseguir capturar variáveis.
+
+
+#### Exercícios de console.log(), alert(), confirm e prompt
+
+Para os próximos exercícios vamos criar um arquivo `.html` para testarmos nossos códigos.
+
+https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-3.md
 
 
 #### if/else if/else (condicionais)
 
 if/else if/else são condicionais que utilizamos para executar ou não um pedaço de código.
+Até agora escrevemos mensagens e as mostramos na tela. Com as condicionais podemos controlar quando e se cada mensagem será mostrada.
 
-Na vida real seria como tomar a decisão de atravessar ou não a rua. SE o sinal estiver VERDE, você atravessa. SENÃO (vermelho), você espera.
+Na vida real seria como tomar a decisão de atravessar ou não a rua. SE o sinal estiver VERDE, você atravessa. SENÃO (amarelo ou vermelho), você espera.
 
 
 ```js
@@ -437,7 +500,6 @@ if (condição) {
 O else if pode ser repetido quantas vezes for necessário.
 
 
-
 #### Exercícios
 
-https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-3.md
+https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-4.md
