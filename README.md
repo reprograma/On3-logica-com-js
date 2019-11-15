@@ -80,11 +80,11 @@ Algoritmo é um conceito muito antigo, que é utilizado desde antes de Cristo. P
 Algumas definições de um algoritmo na programação são:
 
 ```
-Sequência ordenada de passos, que acontecem durante um tempo finito e que produzem um resultado esperado.
+- Sequência ordenada de passos, que acontecem durante um tempo finito e que produzem um resultado esperado.
 
-Conjunto das regras e procedimentos lógicos perfeitamente definidos que levam à solução de um problema em um número finito de etapas.
+- Conjunto das regras e procedimentos lógicos perfeitamente definidos que levam à solução de um problema em um número finito de etapas.
 
-Uma receita que mostra passo a passo os procedimentos necessários para a resolução de uma tarefa.
+- Uma receita que mostra passo a passo os procedimentos necessários para a resolução de uma tarefa.
 ```
 
 
@@ -93,12 +93,24 @@ Uma receita que mostra passo a passo os procedimentos necessários para a resolu
 Os algoritmos surgem com a necessidade de resolver algum problema ou executar uma tarefa.
 Para ajudar, podemos utilizar um fluxograma, que vai dar apoio visual para resolvermos a tarefa.
 
-### Fluxograma para resolver um problema de lâmpada que não acende
+#### Fluxograma para resolver um problema de lâmpada que não acende
 ![lampada](images/flow-1.png)
 
-### Fluxograma para assar um pão
+#### Fluxograma para assar um pão
 ![pao](images/flow-2.png)
 
+
+Após a criação do fluxograma podemos começar a escrever o algoritmo
+
+```
+#### Algoritmo para assar um pão
+- Abrir forno
+- Verificar se o forno está ligado
+- Colocar o pão no forno
+- Esperar 50 minutos
+- Retirar o pão do forno
+- Desligar o forno
+```
 
 #### Exercícios de algoritmos
 
@@ -109,8 +121,24 @@ https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio
 
 #### Linguagem de programação
 
+A linguagem de programação é um método padronizado para comunicar instruções para um computador. É um conjunto de regras sintáticas e semânticas usadas para definir um programa de computador. É uma linguagem que pode ser compreendida tanto por um ser humano como por um computador.
+
+A linguagem de programação pode ser comparada às linguas faladas pelos seres humanos. A língua portuguesa, por exemplo, tem um conjunto de regras de sintaxe e de semântica, que uma pessoa precisa aprender para se comunicar com outra.
+No caso do computador, ele só entende comandos lógicos. Por exemplo ele não sabe o que é um pão, para ele pão é uma palavra que ele trata como texto.
+
+Existem diversos tipos de linguagem de programação, e elas podem ser classificadas em vários tipos. Um dos tipos de classificação é por nível de abstração, que pode ser baixo ou alto.
+As linguagens de baixo nível normalmente estão relacionadas a tarefas que acontecem na arquitetura do computador. As de alto nível as vezes precisam de um compilador (um programa intermediário que traduz o que o ser humano escreveu para uma linguagem que a máquina entenda), como Java e C.
+
 
 #### O que é Javascript
+
+JavaScript é uma linguagem de programação interpretada (não precisa de um compilador, ela é lida diretamente pelo navegador) estruturada (ênfase em sequência, decisão e, iteração - subrotinas, laços de repetição, condicionais e, estruturas em bloco), client-side, de script em alto nível .Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da Internet. JavaScript surgiu em 1995 e permite páginas da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo.
+
+Javascript também é chamado de JS. Javascript e Java são linguagens completamente diferentes.
+
+Os arquivos Javascript possuem a extensão `.js`.
+
+Para programar e testar em javascript precisamos somente de um editor de código e um navegador.
 
 
 #### Variáveis
