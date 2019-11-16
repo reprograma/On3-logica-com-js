@@ -6,6 +6,15 @@
 let saudacao = 'Olá';
 if (typeof saudacao === 'string') {
   console.log(saudacao);
+  // vai aparecer Olá no console
+}
+```
+
+```js
+let saudacao = 3;
+if (typeof saudacao === 'string') {
+  console.log(saudacao);
+  // não vai aparecer nada no console, pois a variável é do tipo numero
 }
 ```
 
@@ -14,6 +23,21 @@ if (typeof saudacao === 'string') {
 * Declare outra variável com uma mensagem de texto pedindo para o usuário clicar em um dos botões (OK ou Cancel)
   - Se ele clicar em OK, mostre o seguinte alerta na tela: Você apertou o botão OK
   - Se ele clicar em Cancel, mostre o seguinte alerta na tela: Você apertou o botão Cancel
+
+```js
+let mensagem = 'Aperte um botão.';
+let botao = confirm(mensagem);
+console.log(botao);
+let mensagemOk = 'Você clicou em OK';
+let mensagemCancel = 'Você clicou em Cancel';
+
+if (botao === true) {
+  alert(mensagemOk);
+} else {
+  alert(mensagemCancel);
+}
+```
+
 
 ***
 
