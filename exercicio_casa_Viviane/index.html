@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício para casa</title>
+</head>
+<body>
+    <h1>Algoritmo Média</h1>
+
+    <script type="text/javascript">
+        let nome = prompt("Digite seu nome");
+        let nota1 = prompt("Digite a nota do 1º trimestre");
+        let nota2 = prompt("Digite a nota do 2º trimestre");
+        let nota3 = prompt("Digite a nota do 3º trimestre");
+        let soma = parseInt(nota1) + parseInt(nota2) + parseInt(nota3)
+
+        let media = soma /= 3;
+
+        if(media >= 7){
+            alert(`${nome}. Parabéns, você foi aprovada(o). Aproveite as férias!`);
+        }
+        else{
+            alert(`Fuén, sua média é: ${media} " e você está reprovada(o).`);
+            let recuperacao = confirm("Deseja fazer aula de recuperação?");
+
+            if(recuperacao)
+            {
+                alert("Ótimo, as aulas de recuperação começam semana que vem.");
+            }
+            else{
+                alert("Que pena, te vejo ano que vem");
+            }
+        }
+
+    </script>
+
+</body>
+</html>
