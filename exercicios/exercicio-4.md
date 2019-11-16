@@ -14,4 +14,8 @@
 
 * Peça para o usuário digitar dois nomes de frutas e depois compare uma com a outra
   - Se elas forem iguais, mostre um alerta na tela avisando que elas são iguais
-  - Se não forem, motre um alerta na tela avisando que são frutas diferentes
+  - Se não forem, mostre um alerta na tela avisando que são frutas diferentes
+
+* Crie um algoritmo em javascript para verificar se um cinema já está aberto. O cinema abre às 14h.
+  - Se estiver aberto, mostre a mensagem: Agora são [x horas] e o cinema já está aberto desde às 14h.
+  - Se estiver fechado, mostre a mensagem: Agora são [x horas] e o cinema só abre às 14h.

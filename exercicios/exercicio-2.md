@@ -1,6 +1,5 @@
 ### Exercício de algoritmos
 
-
 * Desenhe o fluxograma do algoritmo abaixo
 * Crie um algoritmo descrevendo como montar um sanduíche.
   - Descreva todos os elementos que compõe o sanduíche (pão, condimentos, etc)
@@ -13,4 +12,4 @@
   - A média para passar de ano na escola é 7
   - O ano escolar tem 3 trimestres
   - Alunos aprovados devem ver a mensagem: Parabéns, você está aprovado, aproveite suas férias!
-  - Alunos reprovados devem ver a mensagem: Fuén :(
+  - Alunos reprovados devem ver a mensagem: Fuén, você está reprovado.
