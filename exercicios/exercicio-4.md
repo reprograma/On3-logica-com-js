@@ -16,6 +16,12 @@
   - Se elas forem iguais, mostre um alerta na tela avisando que elas são iguais
   - Se não forem, mostre um alerta na tela avisando que são frutas diferentes
 
+* Peça para o usuário digitar três números e verifique se os números são positivos, negativos ou zero
+  - Se o número for positivo, mostre a mensagem: "O número [x] é positivo"
+  - Se o número for negativo, mostre a mensagem: "O número [x] é negativo"
+  - Se o número for zero, mostre a mensagem: "O número [x] é zero"
+  - Você pode mostrar uma mensagem para cada número ou uma mensagem só para os três
+
 * Crie um algoritmo em javascript para verificar se um cinema já está aberto. O cinema abre às 14h.
   - Se estiver aberto, mostre a mensagem: Agora são [x horas] e o cinema já está aberto desde às 14h.
   - Se estiver fechado, mostre a mensagem: Agora são [x horas] e o cinema só abre às 14h.
