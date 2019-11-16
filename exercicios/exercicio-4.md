@@ -2,6 +2,13 @@
 
 * Declare uma variável e mostre no console do navegador somente se essa variável for uma string
 
+```js
+let saudacao = 'Olá';
+if (typeof saudacao === 'string') {
+  console.log(saudacao);
+}
+```
+
 ***
 
 * Declare outra variável com uma mensagem de texto pedindo para o usuário clicar em um dos botões (OK ou Cancel)
