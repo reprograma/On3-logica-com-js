@@ -4,10 +4,6 @@
 
 ***
 
-* Declare outra variável e mostre com um alerta no navegador somente se essa variável for um número
-
-***
-
 * Declare outra variável com uma mensagem de texto pedindo para o usuário clicar em um dos botões (OK ou Cancel)
   - Se ele clicar em OK, mostre o seguinte alerta na tela: Você apertou o botão OK
   - Se ele clicar em Cancel, mostre o seguinte alerta na tela: Você apertou o botão Cancel
