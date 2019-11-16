@@ -5,7 +5,7 @@
 ![javascript](images/javascript.gif)
 
 ***
-
+* [Dúvidas](#dúvidas)
 * [Lógica e algoritmos](#lógica-e-algoritmos)
   * [O que é lógica](#o-que-é-lógica)
   * [Exercício de lógica](#exercício-de-lógica)
@@ -36,6 +36,13 @@
   * [Exercícios](#exercicios)
   * [Tarefa de casa](https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-tarefa-de-casa.md)
 
+
+### Dúvidas sobre o conteúdo
+
+https://github.com/reprograma/On3-logica-com-js/issues
+http://dontpad.com/On3-logica-com-js
+
+***
 
 ## Lógica e algoritmos
 
