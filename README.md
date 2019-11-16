@@ -5,7 +5,7 @@
 ![javascript](images/javascript.gif)
 
 ***
-* [Dúvidas](#dúvidas)
+* [Dúvidas sobre o conteúdo](#dúvidas-sobre-o-conteúdo)
 * [Lógica e algoritmos](#lógica-e-algoritmos)
   * [O que é lógica](#o-que-é-lógica)
   * [Exercício de lógica](#exercício-de-lógica)
@@ -40,6 +40,7 @@
 ### Dúvidas sobre o conteúdo
 
 https://github.com/reprograma/On3-logica-com-js/issues
+
 http://dontpad.com/On3-logica-com-js
 
 ***
