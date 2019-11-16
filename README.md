@@ -344,9 +344,9 @@ let nome = null;
 `typeof` serve para descobrirmos o tipo de variável que estamos declarando ou recebendo. Importante lembrar que `typeof` retorna o tipo e não o valor da variável.
 
 ```js
-typeof 0  //retorna number
-typeof 'Patricia'  //retorna string
-typeof false  //retorna boolean
+typeof 0  //retorna 'number'
+typeof 'Patricia'  //retorna 'string'
+typeof false  //retorna 'boolean'
 ```
 
 #### Funções nativas
