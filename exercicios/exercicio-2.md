@@ -13,3 +13,5 @@
   - O ano escolar tem 3 trimestres
   - Alunos aprovados devem ver a mensagem: Parabéns, você está aprovado, aproveite suas férias!
   - Alunos reprovados devem ver a mensagem: Fuén, você está reprovado.
+
+https://www.lucidchart.com/documents/edit/85abd4b4-4b52-4aef-a780-2f035777ae83/0_0?beaconFlowId=A6D76BE5DE15DC0D
