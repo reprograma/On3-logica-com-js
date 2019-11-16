@@ -15,3 +15,9 @@
   - Alunos reprovados devem ver a mensagem: Fuén, você está reprovado.
 
 https://www.lucidchart.com/documents/edit/85abd4b4-4b52-4aef-a780-2f035777ae83/0_0?beaconFlowId=A6D76BE5DE15DC0D
+
+
+***
+
+* Desenhe o fluxograma do algoritmo abaixo
+* Crie um algoritmo de como você imagina que o login no seu email funciona
