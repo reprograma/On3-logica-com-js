@@ -38,18 +38,31 @@ if (botao === true) {
 }
 ```
 
-
 ***
 
 * Declare outra variável com uma mensagem de texto pedindo para o usuário digitar o seu nome
   - Verifique se o nome é uma String
   - Se for uma string, mostre o seguinte alerta na tela: Olá nomedavariavel
 
+  * Tem que utilizar o isNan();
+
 ***
 
 * Peça para o usuário digitar dois nomes de frutas e depois compare uma com a outra
   - Se elas forem iguais, mostre um alerta na tela avisando que elas são iguais
   - Se não forem, mostre um alerta na tela avisando que são frutas diferentes
+
+```js
+let primeiraFruta = prompt('Digite um nome de fruta');
+let segundaFruta = prompt('Digite outra nome de fruta');
+console.log(primeiraFruta, segundaFruta);
+
+if (primeiraFruta === segundaFruta) {
+  alert(`${primeiraFruta} é igual a ${segundaFruta}`);
+} else {
+  alert(`${primeiraFruta} é diferente de ${segundaFruta}`);
+}
+```
 
 ***
 
