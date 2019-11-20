@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resultado</title>
+</head>
+<body>
+    <script type="text/javascript">
+    //Nome do aluno
+    let nome = prompt('Digite seu nome');
+    if(isNaN(nome)){
+        alert(`Bem-vindo(a), ${nome}! Vamos saber se você foi aprovado(a)!`);
+    }
+    //notas 
+    let nota1 = prompt('Digite sua nota (de 0 a 10) do primeiro trimestre');
+    let nota2 = prompt('Digite sua nota (de 0 a 10) do segundo trimestre');
+    let nota3 = prompt('Digite sua nota (de 0 a 10) do terceiro trimestre');
+    
+    //transformação de string em número
+    let nota1ComNum = parseInt(nota1);
+    let nota2ComNum = parseInt(nota2);
+    let nota3ComNum = parseInt(nota3);
+    
+    //cálculo da média
+    let media = (nota1ComNum+nota2ComNum+nota3ComNum)/3;
+    
+    //Mensagem de aprovação e reprovação
+    if(media>=7) {
+        alert(`${nome}, parabéns!! Você está aprovado com média ${media.toFixed(1)}, aproveite suas férias!`);
+    }else {
+        let botao=confirm(`${nome} sua média é ${media} e você está reprovado. Deseja fazer aulas de recuperação para tentar melhorar a nota e passar de ano? Clique ok para confirmar ou Cancelar para recusar.`);
+        if(botao === true){
+            alert('Ótimo, as aulas de recuperação começam semana que vem!');
+        }else {
+            alert('Que pena, te vejo ano que vem.');
+        }
+    }  
+    </script>
+</body>
+</html>
