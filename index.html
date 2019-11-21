@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Média bimestral</title>
+</head>
+
+<body>
+<script type="text/javascript">
+nome=prompt("Digite o nome do aluno:");
+
+nota1 = parseInt(prompt("Digite a primeira nota:"));
+nota2 = parseInt(prompt("Digite a segunda nota:"));
+nota3 = parseInt(prompt("Digite a terceira nota:"));
+
+media = (nota1 + nota2 + nota3)/3;
+if (media>=7)
+{
+document.write ("Parabéns "+nome+"! Você está aprovada/o com média "+media+". Aproveite suas férias!")
+}
+else {
+document.write ("Fuén "+nome+". Sua média é "+media+" e você está reprovada/o.")
+}
+</script>
+</body>
+</html>
