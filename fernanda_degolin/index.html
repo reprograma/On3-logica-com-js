@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+    <p>Calculo da Média</p>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+       
+        // EXERCICIO ENTREGA JS
+
+        let Nome = prompt ('Digite seu nome');
+        let Nota1 = parseInt (prompt ('Digite a Nota do Primeiro Trimestre'));
+        let Nota2 = parseInt (prompt ('Digite a Nota do Segundo Trimestre'));
+        let Nota3 = parseInt (prompt('Digite a Nota do Terceiro Trimestre'));
+        let Media = 7;
+        let Calculo_Media = Math.floor (((Nota1 + Nota2 + Nota3) / 3));
+
+        if (Calculo_Media >= Media) {
+            alert (`Parabéns ${Nome} você está aprovado com média ${Calculo_Media}, aproveite suas férias!`);
+        }
+
+        else {
+            alert (`Fuén ${Nome}, sua média é ${Calculo_Media} e você está reprovado.`);
+            let Recuperacao = confirm('Gostaria de fazer aulas de recuperação para tentar melhorar a nota e passar de ano?');
+
+        if (Recuperacao === true) {
+            alert (`Ótimo ${Nome}, as aulas de recuperação começam semana que vem!`);
+        }
+
+        else {
+            alert (`Que pena, te vejo ano que vem!`);
+        }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
