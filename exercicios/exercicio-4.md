@@ -2,9 +2,21 @@
 
 * Declare uma variável e mostre no console do navegador somente se essa variável for uma string
 
-***
+```js
+let saudacao = 'Olá';
+if (typeof saudacao === 'string') {
+  console.log(saudacao);
+  // vai aparecer Olá no console
+}
+```
 
-* Declare outra variável e mostre com um alerta no navegador somente se essa variável for um número
+```js
+let saudacao = 3;
+if (typeof saudacao === 'string') {
+  console.log(saudacao);
+  // não vai aparecer nada no console, pois a variável é do tipo numero
+}
+```
 
 ***
 
@@ -12,17 +24,45 @@
   - Se ele clicar em OK, mostre o seguinte alerta na tela: Você apertou o botão OK
   - Se ele clicar em Cancel, mostre o seguinte alerta na tela: Você apertou o botão Cancel
 
+```js
+let mensagem = 'Aperte um botão.';
+let botao = confirm(mensagem);
+console.log(botao);
+let mensagemOk = 'Você clicou em OK';
+let mensagemCancel = 'Você clicou em Cancel';
+
+if (botao === true) {
+  alert(mensagemOk);
+} else {
+  alert(mensagemCancel);
+}
+```
+
 ***
 
 * Declare outra variável com uma mensagem de texto pedindo para o usuário digitar o seu nome
   - Verifique se o nome é uma String
   - Se for uma string, mostre o seguinte alerta na tela: Olá nomedavariavel
 
+  * Tem que utilizar o isNan();
+
 ***
 
 * Peça para o usuário digitar dois nomes de frutas e depois compare uma com a outra
   - Se elas forem iguais, mostre um alerta na tela avisando que elas são iguais
   - Se não forem, mostre um alerta na tela avisando que são frutas diferentes
+
+```js
+let primeiraFruta = prompt('Digite um nome de fruta');
+let segundaFruta = prompt('Digite outra nome de fruta');
+console.log(primeiraFruta, segundaFruta);
+
+if (primeiraFruta === segundaFruta) {
+  alert(`${primeiraFruta} é igual a ${segundaFruta}`);
+} else {
+  alert(`${primeiraFruta} é diferente de ${segundaFruta}`);
+}
+```
 
 ***
 

@@ -5,7 +5,7 @@
 ![javascript](images/javascript.gif)
 
 ***
-
+* [Dúvidas sobre o conteúdo](#dúvidas-sobre-o-conteúdo)
 * [Lógica e algoritmos](#lógica-e-algoritmos)
   * [O que é lógica](#o-que-é-lógica)
   * [Exercício de lógica](#exercício-de-lógica)
@@ -36,6 +36,14 @@
   * [Exercícios](#exercicios)
   * [Tarefa de casa](https://github.com/reprograma/On3-logica-com-js/blob/master/exercicios/exercicio-tarefa-de-casa.md)
 
+
+### Dúvidas sobre o conteúdo
+
+https://github.com/reprograma/On3-logica-com-js/issues
+
+http://dontpad.com/On3-logica-com-js
+
+***
 
 ## Lógica e algoritmos
 
@@ -336,9 +344,9 @@ let nome = null;
 `typeof` serve para descobrirmos o tipo de variável que estamos declarando ou recebendo. Importante lembrar que `typeof` retorna o tipo e não o valor da variável.
 
 ```js
-typeof 0  //retorna number
-typeof 'Patricia'  //retorna string
-typeof false  //retorna boolean
+typeof 0  //retorna 'number'
+typeof 'Patricia'  //retorna 'string'
+typeof false  //retorna 'boolean'
 ```
 
 #### Funções nativas
