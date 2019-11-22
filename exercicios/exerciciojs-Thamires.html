@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcule sua média final</title>
+</head>
+<body>
+    <h1> Thamires | Cálculo da média final do aluno</h1>
+
+    <script type="text/javascript">
+    let nomeAluno = prompt ('Digite seu nome:');
+    let nota1 = parseInt(prompt ('Digite a nota do primeiro trimestre'));
+    let nota2 = parseInt(prompt ('Digite a nota do segundo trimestre'));
+    let nota3 = parseInt(prompt ('Digite a nota do terceiro trimestre'));
+    let media = 7;
+    let calculoMedia = Math.floor(((nota1 + nota2 + nota3)/ 3));
+    console.log(calculoMedia);
+    if (calculoMedia >= media) {
+        alert (`Parabéns, ${nomeAluno}! Você está aprovado com média ${calculoMedia}. Aproveite suas férias!`);
+    }
+    else {
+        alert (`Fuen! ${nomeAluno}, sua média é ${calculoMedia} e você está reprovado!`);
+        let recuperacao = confirm ('Você gostaria de fazer aula de recuperação?');
+        console.log(recuperacao);
+        if (recuperacao === true) {
+            alert(`Ótimo, ${nomeAluno}! As aulas de recuperação começam semana que vem!`);
+        }
+        else {
+            alert(`Que pena, ${nomeAluno}, vejo você no ano vem!`);
+        }
+    }
+    </script>
+</body>
+</html> 
