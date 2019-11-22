@@ -13,25 +13,22 @@
 
 
   ```js
-  let nomeAluno = prompt('Digite o seu nome');
-  let notaUm = parseInt(prompt('Digite a nota do primeiro trimestre'));
-  let notaDois = parseInt(prompt('Digite a nota do segundo trimestre'));
-  let notaTres = parseInt(prompt('Digite a nota do terceiro trimestre'));
-  let mediaEscola = 7;
-
-  let calculoMedia = Math.floor(((notaUm + notaDois + notaTres) / 3));
-
-  if (calculoMedia >= mediaEscola) {
-    alert(`Parabéns ${nomeAluno}, você está aprovado com média ${calculoMedia}, aproveite suas férias!`);
-  } else {
-    alert(`${nomeAluno}, sua média é ${calculoMedia} e você está reprovado.`);
-    let recuperacao = confirm('Você gostaria de fazer aulas de recuperação?');
-
-    if (recuperacao === true) {
-      alert(`Ótimo ${nomeAluno}, as aulas de recuperação começam semana que vem!`);
-    } else {
-      alert(`Que pena ${nomeAluno}, te vejo ano que vem.`);
-    }
-    //alert('Fuén, sua média é ' + calculoMedia + ' e você está reprovado.');
-  }
-  ```
+  let nome = prompt('Digite seu nome: ');
+        let nota1 = parseInt(prompt('Digite a nota do 1º Trimestre: '));
+        let nota2 = parseInt(prompt('Digite a nota do 2º Trimestre: '));
+        let nota3 = parseInt(prompt('Digite a nota do 3º Trimestre: '));
+       
+        let media = Math.floor((nota1 + nota2 + nota3) / 3);
+        
+        if (media >= 7) {
+            alert(`${nome}, parabéns! Você está aprovado com média ${media}. Aproveite suas férias!`);
+        } else {
+            alert(`Ops! Sua média é ${media} e você está reprovado.`);
+            let botao = confirm('Você gostaria de fazer aulas de recuperação para tentar melhorar a nota?');
+                console.log(botao);
+                if (botao === true) {
+                    alert('Ótimo, as aulas de recuperação começam semana que vem!');
+                } else {
+                    alert('Que pena, te vejo ano que vem.');
+                }
+            }
