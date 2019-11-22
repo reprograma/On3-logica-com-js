@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script type="text/javascript">
+    // let mensagem = ('Olá mundo!')
+    // console.log (mensagem);
+
+    let nome = prompt ('Digite seu nome:');
+    isNaN (nome);
+    if (nome == 'true');
+    alert (`Olá  ${nome}`);
+    
+    alert ('Ao digitar sua nota observe que números decimais devem estar separados por ponto e não vírgula. Ok?');
+
+    let nota1 = prompt ('Digite a sua nota obtida no primeiro trimestre:');
+    let nota2 = prompt ('Digite a sua nota obtida no segundo trimestre:');
+    let nota3 = prompt ('Digite a sua nota obtida no terceiro trimestre:');
+    let soma = parseFloat (nota1) + parseFloat (nota2) + parseFloat (nota3);    
+    let media = Math.round (soma / 3);    
+    if (media >= 7) {
+      alert (`Parabéns ${nome}, você está aprovad@ com média ${media}, aproveite suas férias!`);
+    } else if (media < 7) {
+      alert (`${nome}, sua média é ${media} e você está reprovad@.`);      
+    }
+    if (media < 7) {
+      let botao = confirm ('Você  gostaria de fazer aulas de recuperação para tentar melhorar a nota e passar de ano?');    
+    if (botao ===true) {
+      alert ('Ótimo, as aulas de recuperação começam semana que vem!');
+    } else {
+      alert ('Que pena, te vejo ano que vem.');
+    }
+    }
+    
+    </script>
+  </body>
+</html>
