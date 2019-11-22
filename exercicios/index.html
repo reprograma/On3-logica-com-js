@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <h1> Exercício média final</h1>
+
+    <script type="text/javascript">
+
+        let nome = prompt('Digite seu nome');
+        let nota1 = prompt('Digite nota do primeiro trimestre');
+        let nota2 = prompt('Digite nota do segundo trimestre');
+        let nota3 = prompt('Digite nota do terceiro trimestre');
+
+        // Transformar notas digitadas de string para número
+        let n1 = parseInt(nota1);
+        let n2 = parseInt(nota2);
+        let n3 = parseInt(nota3);
+
+        let media = (n1 + n2 + n3) / 3;
+
+
+        if (media >= 7) {
+            alert(`${nome}, parabéns! Você está aprovado com média ${media}, aproveite suas férias!`);
+        } else {
+            alert(`Fuén, sua média é ${media} e você está reprovado`);
+            let reprovado = confirm(`${nome}, você gostaria de fazer aulas de recuperação para tentar melhorar a nota e passar de ano?`)
+            if (reprovado === true) {
+                alert(`Ótimo, as aulas de recuperação começam semana que vem!`)
+            } else {
+                alert(`Que pena, te vejo ano que vem.`)
+            }
+        }
+
+
+    </script>
+</body>
