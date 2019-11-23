@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>reprograma calculo media</title>
+</head>
+
+<body>
+  <h1>Calculo de média</h1>
+  <h4>Resolução da Mellyssa </h4>
+
+
+  <script>
+    let aluno = prompt("digite o seu nome");
+
+    let nota1 = parseInt(prompt("digite a sua nota do primeiro trimestre"));
+    let nota2 = parseInt(prompt("digite a sua nota do segundo trimestre"));
+    let nota3 = parseInt(prompt("digite a sua nota do terceiro trimestre"));
+
+    let media = ((nota1 + nota2 + nota3) / 3);
+
+    if (media >= 7) {
+      alert(`Parabéns ${aluno}, você está aprovado com média ${media}, aproveite suas férias!`)
+    } else {
+      alert(`${aluno}, sua média foi ${media}, abaixo da nossa nota de corte.`)
+      let recuperacao = confirm("Você tem interesse em fazer aulas de recuperação?")
+
+      if (recuperacao === true) {
+        alert("Ótimo! as aulas de recuperação começam semana que vem!")
+      } else {
+        alert("Que pena, te vejo no ano que vem!")
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
