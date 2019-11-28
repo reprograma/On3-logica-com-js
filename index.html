@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcule sua nota</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+    
+        let Nome = prompt('Digite seu nome');
+        let Nota1 = parseInt(prompt('Digite a nota do primeiro trimestre'));
+        let Nota2 = parseInt(prompt('Digite a nota do segundo trimestre'));
+        let Nota3 = parseInt(prompt('Digite a nota do terceiro trimestre'));
+
+        //Base para o Calculo//
+        let MediaNota = ((Nota1 + Nota2 + Nota3) / 3);
+        let MediaEscola = 7
+            
+        //Condição//
+        if (MediaNota > MediaEscola) {
+            alert(`Parabéns ${Nome}! Você está aprovado(a) com a média ${MediaNota}`);
+        } 
+            
+        else {
+            alert(`Putz ${Nome}, você está reprovado(a) com a média ${MediaNota} `)
+            
+        }
+          
+    </script>
+
+
+</body>
+</html> 
