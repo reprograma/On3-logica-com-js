@@ -10,7 +10,47 @@
     - Peça para o aluno digitar seu nome e mostre a mensagem de aprovado/reprovado junto com o nome ([Fulano], parabéns! você está aprovado, aproveite suas férias!)
     - Para os alunos reprovados, mostrar mensagem perguntando se eles gostariam de fazer aulas de recuperação para tentar melhorar a nota e passar de ano. Se o aluno responder que não, mostre a mensagem: Que pena, te vejo ano que vem. Se o aluno responder que sim, mostre a mensagem: Ótimo, as aulas de recuperação começam semana que vem!
     - Arredondar valores da nota (mostrar números inteiros)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXERCÍCIO PARA CASA DA ISAURA</title>
+</head>
+<body>
+    
+<!--
+//Calcular média do Alunos
+//Inserir notas do aluno 1bim, 2bim e 3bim;
+//Criar uma função: Somar notas f(1bm+1bim+3bim/3);
+//Ver média do Aluno:
+//> ou = 7 Aprovado;
+//< 7 reprovado;
+//Enviar mensagem 
+//Caso Precise de 05 pontos para ser aprovado , aguardar decisão do Professor-->
 
+<script>
+let NomeAluno = prompt('Insira seu Nome');
+let Nota1Trim = parseInt(prompt('Inserir nota do Primeiro Trimestre'));
+let Nota2Trim = parseInt(prompt('Inserir nota do Segundo Trimestre'));
+let Nota3Trim = parseInt(prompt('Inserir nota do Terceiro Trimestre'));
+let MediaEscola = 7;
+
+let MediaFinal = Math.round(Nota1Trim + Nota2Trim + Nota3Trim) / 3;
+
+if (MediaFinal >= MediaEscola)
+{ alert (`${NomeAluno}, Parabéns! você está aprovado, aproveite suas férias!`);
+}
+else
+{ alert (`${NomeAluno}, você está reprovado!  Sua Média atualmente é ${MediaFinal}`);
+ let AguardandoNota= confirm ('Gostaria de fazer aulas de recuperação para tentar melhorar sua nota e passar de ano?')
+}
+
+
+</script>
+</body>
+</html>
 
   ```js
   let nomeAluno = prompt('Digite o seu nome');
