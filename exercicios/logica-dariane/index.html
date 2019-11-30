@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculo da Media</title>
+</head>
+<body>
+
+    <h1>Cálculo da Média</h1>
+
+    <script type="text/javascript">
+
+
+        let nome = prompt('Digite seu nome') ;
+        let nota1 = prompt(`${nome} Digite a nota do primeiro trimestre:`);
+        let nota2 = prompt('Digite a nota do segundo trimestre:');
+        let nota3 = prompt('Digite a nota do terceiro trimestre:');
+
+
+        let n1 = Number(nota1);
+        let n2 = Number(nota2);
+        let n3 = Number(nota3);
+
+        let media = Math.floor(((n1 + n2 + n3) / 3));
+
+        if (media >= 7) {
+            alert(`Parabéns ${nome}! você está aprovado(a), aproveite suas férias!`);
+        } else {
+            alert(`${nome}, sua média é ${media} e você está Reprovado(a).`)
+            let botao = confirm('Gostaria de fazer aulas de recuperação?')
+            if (botao === true) {
+            alert('Ótimo, as aulas de recuperação começam semana que vem!')
+        } else {
+            alert('Que pena! Te vejo no ano que vem!')
+        }
+        } 
+
+    </script>
+</body>
+</html>
