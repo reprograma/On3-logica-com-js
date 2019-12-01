@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Média</title>
+</head>
+<body>
+    <h1>Média final do aluno</h1>
+    <script type="text/javascript">
+       let nome = prompt('Digite seu nome'); //Colocar o nome do aluno 
+       let primeiraNota = prompt('Digite sua primeira nota'); // Colocar a primeira nota do aluno
+       let segundaNota = prompt('Digite sua segunda nota'); // Colocar a segunda nota do aluno 
+       let terceiraNota = prompt('Digite sua terceira nota'); // Colocar a terceira nota do aluno 
+
+       // Convertendo de string para Número, soma das notas e resultado da media e arredondamento do número das medias.
+       media = Math.floor((parseInt(primeiraNota) + parseInt(segundaNota) + parseInt(terceiraNota)))/3; 
+       console.log(media);
+       if (media >= 7) {
+        document.write ('Parabéns ' + nome + ', você foi aprovado! Sua média foi ' + media + ' aproveite suas férias!');
+       } else {
+        alert('Poxa ' + nome + ', você foi reprovado! Sua média foi ' + media + ' .');
+        document.write ('Poxa ' + nome + ', você foi reprovado! Sua média foi ' + media + ' .') 
+        
+       let mensagem = 'Gostaria de fazer aulas de recuperação para melhorar sua nota?';
+       let botao = confirm(mensagem);
+       let mensagemOk = 'Que ótimo, as aulas começam na semana que vem! Em breve vamos lhe encaminhar em e-mail com os hórarios e datas da sua recuperação.';
+       let mensagemCancel = 'Uma pena! Te vejo ano que vem!';
+       if (botao === true) {
+           alert(mensagemOk);
+       } else {
+           alert(mensagemCancel);
+       }
+        }
+    </script>
+</body>
+</html>
