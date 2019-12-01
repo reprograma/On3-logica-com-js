@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Nota final do aluno</title>
+    </head>
+
+    <body>
+        <h1>Média Final</h1>
+
+        <script type="text/javascript">
+        let msg1 = 'Digite seu nome: ';
+        let nome = prompt(msg1);
+        //console.log(nome);
+
+
+        let nota1 = parseInt(prompt('Digite a nota do primeiro trimestre:'));
+        let nota2 = parseInt(prompt('Digite a nota do segundo trimestre:'));
+        let nota3 = parseInt(prompt('Digite a nota do terceiro trimestre:'));
+        let media = Math.round((nota1+nota2+nota3)/3);
+
+        if (media >= 7){
+            alert(`Parabéns ${nome}, você está aprovado com média ${media}, aproveite suas férias!`);
+        }
+        else{
+            let botao = confirm(`Fuén, sua média é ${media} e você está reprovado. Gostaria de fazer aulas de recuperação para tentar melhorar a nota e passar de ano?`);
+            if(botao == true){
+                alert('Ótimo, as aulas de recuperação começam semana que vem!')
+            }else{
+                alert(`Que pena ${nome}, te vejo ano que vem!`)
+            }
+        }
+        </script>          
+    <body>
+<html>
