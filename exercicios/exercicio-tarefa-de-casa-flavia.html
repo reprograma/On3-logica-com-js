@@ -1,0 +1,58 @@
+<!DOCTYPE html
+<html>
+  <head>
+    <title>Media</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+      let nome, n1, n2, n3;
+
+      function funcao1() {
+        nome = document.getElementById("Inputnome").value;
+        n1 = parseInt(document.getElementById("nt1").value);
+        n2 = parseInt(document.getElementById("nt2").value);
+        n3 = parseInt(document.getElementById("nt3").value);
+        let media = (n1 + n2 + n3) / 3;
+        if (media >= 7) {
+          alert("Parabéns " +nome +" Você foi Aprovado! \n Sua média foi " +media +"! \n Aproveite suas férias!");
+        } else {
+          alert("Que pena " +nome +"! \n Você foi reprovado! \nSua média foi " +media +"");
+          var r = confirm("Gostaria de fazer aulas de recuperação para melhorar as notas e tentar ser aprovado?");
+          if (r == true) {
+            alert("Que Bom as aulas começam na próxima semana!");
+          } else {
+            alert("Que pena! Nos vemos no próximo ano!");
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Calculo Media</h1>
+    <div>Digite seu nome e suas notas por semestre nos campos abaixo:</div>
+    <br />
+    <div>
+      <label for="txtnome">Nome:</label>
+      <input type="text" id="Inputnome" />
+    </div>
+    <br />
+    <div>
+      <label for="nota1">Nota 1º Trimestre:</label>
+      <input type="number" id="nt1" value="0" min="0" max="10" />
+    </div>
+    <br />
+    <div>
+      <label for="nota2">Nota 2º Trimestre:</label>
+      <input type="number" id="nt2" value="0" min="0" max="10" />
+    </div>
+    <br />
+    <div>
+      <label for="nota3">Nota 3º Trimestre:</label>
+      <input type="number" id="nt3" value="0" min="0" max="10" />
+    </div>
+    <br />
+    <br />
+    <div>
+      <button type="button" onclick="funcao1()">Enviar</button>
+    </div>
+  </body>
+</html>
