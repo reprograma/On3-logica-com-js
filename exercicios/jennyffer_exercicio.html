@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercício Semana 4</title>
+  </head>
+  <body>
+    <h1>Média Final com Javascript - Jennyffer Novaes de Morais</h1>
+
+    <script type="text/javascript">
+      let nomeDoAluno, media, nota1, nota2, nota3, recuperacao;
+
+      nomeDoAluno = prompt("Informe seu nome: ");
+
+      nota1 = parseInt(prompt("Informe a nota do 1º trimestre: "));
+
+      nota2 = parseInt(prompt("Informe a nota do 2º trimestre: "));
+
+      nota3 = parseInt(prompt("Informe a nota do 3º trimestre: "));
+
+      media = Math.floor((nota1 + nota2 + nota3) / 3);
+
+      if (media >= 7) {
+        alert(
+          ` ${nomeDoAluno}, PARABÉNS, você está aprovado (a) com média ${media}, aproveite suas férias!`
+        );
+      } else {
+        alert(`${nomeDoAluno}, sua média é ${media} e você está reprovado.`);
+        recuperacao = confirm("Você gostaria de fazer aulas de recuperação?");
+
+        if (recuperacao === true) {
+          alert(
+            `Ótimo ${nomeDoAluno}, as aulas de recuperação começam semana que vem!`
+          );
+        } else {
+          alert(`Que pena ${nomeDoAluno}, te vejo ano que vem.`);
+        }
+      }
+    </script>
+  </body>
+</html>
