@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcule sua média final</title>
+</head>
+<body>
+        <script type="text/javascript">
+            let nome = prompt("Digite seu nome:");
+            let nota1 = prompt("Digite a sua nota, de 0 a 10, do primeiro trimestre:");
+            let nota2 = prompt("Digite a sua nota, de 0 a 10, do segundo trimestre:");
+            let nota3 = prompt("Digite a sua nota, de 0 a 10, do terceiro trimestre:");
+
+            let n1 = parseInt(nota1);
+            let n2 = parseInt(nota2);
+            let n3 = parseInt(nota3);
+
+            let media = (n1 + n2 + n3)/3;
+        
+    
+            if (media >=7 ) {
+                alert(`${nome}, parabéns! Você está aprovado(a) com média ${media}, aproveite suas férias!`);
+            }
+            else {
+                alert (`${nome}, sua média é ${media} e você está reprovado(a).`);
+                let mensagem = 'Gostaria de fazer aulas de recuperação para melhorar sua nota?';
+                let botao = confirm(mensagem);
+                let mensagemOk = 'Que ótimo, as aulas começam na semana que vem!';
+                let mensagemCancel = 'Uma pena! Te vejo ano que vem!';
+                if (botao === true) {
+                     alert(mensagemOk);
+                } else {
+                    alert(mensagemCancel);
+       }
+        }
+        
+
+        </script>
+            
+        
+</body>
+</html>
