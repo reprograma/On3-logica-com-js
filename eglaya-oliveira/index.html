@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Exercício de JS</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        let nome = prompt('Digite seu nome: ');
+        let nota1 = parseInt(prompt('Digite a nota do 1º Trimestre: '));
+        let nota2 = parseInt(prompt('Digite a nota do 2º Trimestre: '));
+        let nota3 = parseInt(prompt('Digite a nota do 3º Trimestre: '));
+       
+        let media = Math.floor((nota1 + nota2 + nota3) / 3);
+        
+        if (media >= 7) {
+            alert(`${nome}, parabéns! Você está aprovado com média ${media}. Aproveite suas férias!`);
+        } else {
+            alert(`Ops! Sua média é ${media} e você está reprovado.`);
+            let botao = confirm('Você gostaria de fazer aulas de recuperação para tentar melhorar a nota?');
+                console.log(botao);
+                if (botao === true) {
+                    alert('Ótimo, as aulas de recuperação começam semana que vem!');
+                } else {
+                    alert('Que pena, te vejo ano que vem.');
+                }
+            }
+    
+    </script>
+    
+</body>
+</html>
