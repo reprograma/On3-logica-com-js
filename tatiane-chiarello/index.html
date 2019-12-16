@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculador de média</title>
+</head>
+<body>
+    
+    <h1>Cálculo da média final do aluno</h1>
+
+    <script>
+        let nomeAluno = prompt('Digite seu nome');
+        let notaUm = Number(prompt('Digite a nota do Primeiro Trimestre'));
+        let notaDois = Number(prompt('Digite a nota do Segundo Trimestre'));
+        let notaTres = Number(prompt('Digite a nota do Terceiro Trimestre'));
+        let mediaFinal = parseInt((notaUm + notaDois + notaTres)/3);
+
+        if (mediaFinal >= 7) {
+            alert(`${nomeAluno} parabéns! Sua nota final é ${mediaFinal} e você está aprovado. Aproveite suas férias!`);
+        } else if (mediaFinal < 7) {
+            alert(`${nomeAluno}, sua nota final é ${mediaFinal}. Você não passou de ano.`);
+            let msgRecuperacao = confirm('Gostaria de fazer aulas de recuperação para tentar melhorar a nota e passar de ano?');
+
+            if (msgRecuperacao) {
+                alert('Ótimo, as aulas de recuperação começam semana que vem!');
+            } else {
+                alert('Que pena, te vejo ano que vem!');
+            }
+        }
+    </script>
+
+</body>
+</html>
