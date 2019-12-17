@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora do Aluno</title>
+</head>
+<body>
+    <h1>Média de notas</h1>
+    <script type="text/javascript">
+       //Cálculo média de alunos
+       var nota1, nota2, nota3, media;
+       let mensagem1 = "digite sua nota1";
+         nota1 = prompt(mensagem1);
+        let mensagem2 = "Digite sua nota2";
+         nota2 = prompt(mensagem2);
+        let mensagem3 = "digite sua nota3";
+         nota3 = prompt(mensagem3);
+         media = (parseInt(nota1)+parseInt(nota2)+parseInt(nota3))/3;
+        
+
+        if(media>7) 
+        {
+            alert("Parabéns, você está aprovado com média " + media + " aproveite suas férias!");
+        }else 
+        { 
+            alert("Fuén, sua média é " + media + " e você está reprovado.");
+        }
+
+      </script>
+  
+</body>
+</html>
