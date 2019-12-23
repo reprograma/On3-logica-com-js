@@ -1,0 +1,21 @@
+body, html {
+  overflow:hidden;
+   height: 100%;
+    background: rgb(2, 47, 59);
+  color: rgb(185, 32, 32);
+  font-family: cursive;
+  
+}
+
+h1 {
+  font-size: 42px;
+  text-align: center;
+}
+
+.escondido {
+  display: none;
+}
+
+.sky {
+  display: block;
+}
